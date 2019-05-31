@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a UI Component Library that was created by Facebook. It was mainly created to help deal with complex state. It has the main purpose of rendering UI. Some great benefits of it are that they are scalable, reusable, fun to write, and is unipionated when it comes to managing your data.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React is based aroundhow React makes you think about apps as you build them. You have to break down what the different components are, so you can put them all together into one cohesive application.
 
 - [ ] Describe state.
 
+State is the data that your components have access to.
+
 - [ ] Describe props.
+
+Props are the passed state. If a component holds it's own state, and needs to give that state data to another component, we pass that state as a Prop.
 
 ## Project Set Up
 
@@ -42,23 +50,26 @@ Follow these steps to set up and work on your project:
 - [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty. Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge
+
+  <firstname-lastname> Branch into master (student's  Repo).</firstname-lastname>
+
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 Please note:
 
 - In `App.js`'s `componentDidMount()` method we call the public Star Wars API, which stores the result in the component state.
 - Here's an excerpt of that logic:
 
-```js
+```javascript
 componentDidMount() {
   this.getCharacters('https://swapi.co/api/people');
 }
@@ -84,7 +95,6 @@ Your data set will look like this:
 
 ![Star Wars state data](starwars_data.png)
 
-
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
@@ -101,7 +111,6 @@ Required best practices:
 - [ ] Spell-check.
 - [ ] Schedule time to review, refine and reassess your work.
 
-
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
@@ -109,12 +118,14 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 - [ ] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters()`.
+
 - console.log() the data coming back from the server.
+
 - Notice that there are `next` `previous` fields that give you a URL.
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
 
-```js
- .then(data => {
+```javascript
+.then(data => {
     console.log(data); <-- Log data here to find the fields you will need.
     this.setState({ starwarsChars: data.results });
   })
@@ -123,4 +134,5 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 - [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
 
 - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+
 - Your data coming back from Dogs should be formatted in JSON format.
