@@ -26,7 +26,6 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-React JS is a UI Component Library that was created by Facebook. It was mainly created to help deal with complex state. It has the main purpose of rendering UI. Some great benefits of it are that they are scalable, reusable, fun to write, and is unipionated when it comes to managing your data.
 
 - [ ] What does it mean to _think_ in react?
 
