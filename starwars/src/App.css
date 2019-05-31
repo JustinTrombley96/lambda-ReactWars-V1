@@ -1,8 +1,21 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+	color: #443e3e;
+	text-shadow: 1px 1px 5px #fff;
+	background-color: blueviolet;
+}
+.characterCard {
+	margin-right: 30%;
+	margin-left: 30%;
+}
+.name {
+	border: 4px solid black;
+	background-color: rgb(82, 82, 189);
+}
+p {
+	border: 3px solid black;
+	background-color: rgb(197, 200, 15);
 }
 /* write your parent styles in here for your App.js */
