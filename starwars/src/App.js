@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarwarsChars from './components/StarwarsChars';
 
 class App extends Component {
 	constructor() {
@@ -34,9 +35,8 @@ class App extends Component {
 			<div className='App'>
 				<h1 className='Header'>React Wars</h1>
 				<StarwarsChars starwarsChars={this.state.starwarsChars} />
-        {/* Create a variable to pull the array into other files. */}
-      </div>
-
+				{/* Create a variable to pull the array into other files. */}
+			</div>
 		);
 	}
 }

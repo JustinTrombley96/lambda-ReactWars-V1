@@ -12,3 +12,5 @@ export class StarwarsChars extends Component {
 }
 
 //Pulling in the variable from the App.js, mapping over the data to display onto the Character component.
+
+export default StarwarsChars;
